@@ -1,0 +1,35 @@
+#calendar{
+	margin-left: 20px;
+	margin-top: 20px;
+	width:450px;
+}
+
+#days > *{
+	background-color: lightgrey;
+	text-align: center;
+	border: 1px ridge;
+}
+
+#hours > *{
+	width: 90px;
+	height: 90px;
+	border: 1px ridge;
+}
+
+#appointments a{
+	font-size: 10pt;
+}
+
+#icon{
+	height: 15px;
+	width: 15px;
+}
+
+h1{
+	font-size: 20pt;
+	text-align: center;	
+}
+
+#menu, #createApp, #viewApp{
+ 
+}
