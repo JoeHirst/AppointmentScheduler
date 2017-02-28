@@ -2,10 +2,10 @@ $(function(){
 
 		var selected;
 
-		$("#hours > div").click(function() {
+		$(".content > div").click(function() {
 			// get selected field and change colour
 			selected = $(this);
-   			$("#hours > div").css('background', 'transparent');
+   			$(".content > div").css('background', 'transparent');
    			$(this).css('background-color', 'lightblue');
    			$('#menu').popup('open', {positionTo: selected});
 		});		

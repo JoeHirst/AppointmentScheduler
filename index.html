@@ -1,11 +1,11 @@
 <html>
 <head>
-
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta name=viewport content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<link rel="stylesheet" href="css/style.css" />
-	<script src="appointments.js"></script>
+	<script src="js/appointments.js"></script>
 
 </head>
 
@@ -15,14 +15,25 @@
 
 	<h1>Click to add / view appointments</h1>
 	
-		<div id="days" class="ui-grid-d">
+		<!-- Header for desktop -->
+		<div class="ui-grid-d header desktop">
 			<div class="ui-block-a">Monday</div>
 			<div class="ui-block-b">Tuesday</div>
 			<div class="ui-block-c">Wednesday</div>
 			<div class="ui-block-d">Thursday</div>
 			<div class="ui-block-e">Friday</div>
 		</div>
-		<div id="hours" class="ui-grid-d">
+
+		<!-- Header for mobile -->
+		<div class="ui-grid-d header mobile">
+			<div class="ui-block-a">Mon</div>
+			<div class="ui-block-b">Tue</div>
+			<div class="ui-block-c">Wed</div>
+			<div class="ui-block-d">Thu</div>
+			<div class="ui-block-e">Fri</div>
+		</div>
+		
+		<div class="ui-grid-d content">
 			<div class="ui-block-a">9:00</div>
 			<div class="ui-block-b"></div>
 			<div class="ui-block-c"></div>
@@ -79,8 +90,8 @@
 		</div>
 
 		<div data-role="popup" id="menu" class="ui-content" data-transition="pop">
-  			<a id="create" href="#create" data-rel="popup" >Create Appontment</a><br>
-  			<a id="view" href="#view" data-rel="popup">View Appontments</a>
+  			<a id="create" href="#create" data-rel="popup" >Create Appointment</a><br>
+  			<a id="view" href="#view" data-rel="popup">View Appointments</a>
 		</div>
 
 		<div data-role="popup" id="createApp" class="ui-content" data-transition="pop">

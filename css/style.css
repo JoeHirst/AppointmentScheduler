@@ -1,19 +1,24 @@
 #calendar{
-	margin-left: 20px;
-	margin-top: 20px;
-	width:450px;
+	padding: 0 10px 10px 10px;
+	width: 100%;
+	height: 100%;
+	max-width: 960px;
+	min-width: 300px;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
-#days > *{
+.header > *{
 	background-color: lightgrey;
 	text-align: center;
 	border: 1px ridge;
 }
 
-#hours > *{
-	width: 90px;
-	height: 90px;
+.content > * {
+	width: 20%;
+	height: 20%;
 	border: 1px ridge;
+	min-height: 150px;
 }
 
 #appointments a{
@@ -25,11 +30,43 @@
 	width: 15px;
 }
 
+#createApp > form, #submit {
+	margin: 0;
+}
+
 h1{
 	font-size: 20pt;
 	text-align: center;	
 }
 
-#menu, #createApp, #viewApp{
- 
+/* if view width > 500px display desktop header */
+@media (min-width: 500px) {
+	.desktop {
+		display: inherit;
+	}
+
+	.mobile {
+		display: none;
+	}
+}
+
+/* if view width < 500px display mobile heeader */
+@media (max-width: 500px) {
+	.content > * { 
+		min-height: 100px;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: inherit;
+	}
+}
+
+@media (max-width: 400px) {
+	.content > * { 
+		min-height: 50px;
+	}
 }
